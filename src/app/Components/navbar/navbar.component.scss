@@ -1,0 +1,25 @@
+.navbar{
+    color:var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   // background-color: brown;
+    padding: 0px 5%;
+}
+.routing{
+    display: flex;
+    flex-direction: row;
+}
+.item{
+    margin-right: 20px;
+}
+
+.navbar-collapse {
+    flex-direction: row-reverse;
+}
+.nav-link:hover{
+   color:var(--sec-color)
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+}
