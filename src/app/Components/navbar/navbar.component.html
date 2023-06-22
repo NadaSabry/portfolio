@@ -19,10 +19,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link active" href="#">About</a>
-          <a class="nav-link active" href="#">Projects</a>
-          <a class="nav-link active" href="#">Contact</a>
+          <a class="nav-link" [style.color]="active[0]" (click)="standup(0)" href="#home">Home</a>
+          <a class="nav-link" [style.color]="active[1]" (click)="standup(1)" href="#about">About</a>
+          <a class="nav-link" [style.color]="active[2]" (click)="standup(2)"href="#projects">Projects</a>
+          <a class="nav-link" [style.color]="active[3]" (click)="standup(3)" href="#contact">Contact</a>
         </div>
       </div>
     </div>
