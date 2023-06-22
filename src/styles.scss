@@ -21,4 +21,13 @@ body{
 .shadow{
   box-shadow: 0px 0px 6px 0px rgba(256, 256, 256, 0.1),
 }
+.section{
+  height: calc(100vh - 2px);
+  width: 100%;
+  background-color: rgba(256, 256, 256, 0.7);
+  padding: 70px 50px 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom:2px;
+}
 
