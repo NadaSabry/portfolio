@@ -6,7 +6,7 @@
 }
 :root{
   --text-color:white;
-  --sec-color:hsl(176,71%,43%);
+  --sec-color:rgb(32, 188, 177);
   //hsl(176,71%,43%)
 }
 
@@ -19,8 +19,9 @@ body{
    background-attachment: fixed;
 }
 
-.shadow{
-  box-shadow: 0px 0px 6px 0px rgba(256, 256, 256, 0.1),
+.shadoww{
+  box-shadow: 0 .5rem 1rem rgba(256,256,256,.15);
+  //0px 0px 6px 0px rgba(256, 256, 256, .08),
 }
 .section{
   height: calc(100vh - 2px);
