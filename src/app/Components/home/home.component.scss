@@ -1,0 +1,40 @@
+.myimage{
+    //background-color: #060307;
+    border-radius: 15%;
+    width: 200px;
+    background-color: cadetblue
+    //background-color: lightgray;
+
+}
+/*
+#home{
+   // display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //background-color: blueviolet;
+}
+*/
+.align-self-center{
+    grid-column-start: 1;
+}
+.title{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 40px;
+}
+.job{
+    color: var(--sec-color);
+    font-size: 20px;
+}
+.download-btn{
+    text-decoration: none;
+    //background-color: rgb(30,154,161);
+    color:white;
+    padding: 13px 33px;
+    border-radius: 25px;
+    border: 2px solid var(--sec-color);
+    font-family: 'Sansita Swashed', cursive;
+}
+.download-btn:hover{
+    background-color: var(--sec-color);
+}
+//rounded-circle
+

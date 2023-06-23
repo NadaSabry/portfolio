@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Nunito+Sans:ital,wght@0,300;0,600;1,800&family=Sansita+Swashed:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 :root{
   --text-color:white;
-  --sec-color:rgb(32, 188, 177);
+  --sec-color:rgb(30,154,161);//rgb(32, 188, 177);
   //hsl(176,71%,43%)
 }
 
@@ -26,10 +26,11 @@ body{
 .section{
   height: calc(100vh - 2px);
   width: 100%;
- // background-color: rgba(256, 256, 256, 0.7);
-  padding: 70px 50px 50px;
-  display: flex;
-  align-items: center;
+  color:var(--text-color);
+ // background-color: blueviolet;
+  padding: 70px 7% 7%;
+  //display: flex;
+  //align-items: center;
   margin-bottom:2px;
 }
 
