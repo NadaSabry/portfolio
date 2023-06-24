@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit{
-  activenow: string = "hsl(176,71%,43%)";
+  activenow: string = "rgb(30,154,161)";
   active: string[] = [this.activenow, '', '', ''];
 
   constructor(private router: Router) {}

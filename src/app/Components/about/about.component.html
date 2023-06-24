@@ -1,4 +1,5 @@
-<section id="about" class="section">
+<section id="about" class="section" [ngClass]="{ 'reveal': isVisible }">
     <h2>About Us</h2>
-    <p>Some information about our company...</p>
+        <h2>Scroll down to reveal</h2>
+        <p>This is some hidden content that will be revealed on scroll.</p>
 </section>

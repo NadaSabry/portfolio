@@ -1,0 +1,10 @@
+#projects {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 3s all ease;
+}
+#projects.reveal {
+   transform: translateX(0);
+    opacity: 1; /* Reveal the box when the reveal class is added */
+}

@@ -1,0 +1,13 @@
+#about {
+    //opacity: 0; /* Hide the box initially */
+    //transition: opacity 5s ease-in-out;
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 3s all ease;
+  }
+  
+#about.reveal {
+   transform: translateX(0);
+    opacity: 1; /* Reveal the box when the reveal class is added */
+}
