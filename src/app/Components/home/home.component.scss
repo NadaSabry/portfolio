@@ -2,9 +2,12 @@
     //background-color: #060307;
     border-radius: 15%;
     width: 200px;
-    background-color: cadetblue
+    background-color: rgb(1, 120, 120)
     //background-color: lightgray;
 
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(256,256,2566,.15)!important;
 }
 /*
 #home{
@@ -37,4 +40,32 @@
     background-color: var(--sec-color);
 }
 //rounded-circle
+#home{
+    display: grid;
+    align-items: center;
+    align-content:center;
+    grid-template-areas: 
+   "icon text text text text text img img img img img img";
+    @media (max-width:575px) {
+
+        grid-template-areas:
+        "img img img img img img img img img img img img"
+        "icon icon icon text text text text text text text text text";
+        grid-row-gap: 15px;
+        //background-color: aqua;
+    }
+}
+.icon{
+  grid-area: icon;
+}
+.text{
+    grid-area: text;
+    //align-self: center;
+}
+.image{
+    grid-area: img;
+    @media (max-width:575px) {
+       margin: auto;
+    }
+}
 
