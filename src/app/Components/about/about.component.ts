@@ -12,7 +12,7 @@ isVisible = false;
   onScroll() {
     const boxPosition = document.querySelector('#about')?.getBoundingClientRect().top;
     const scrollPosition = window.innerHeight + window.pageYOffset;
-    console.log("about " ,boxPosition , ", " ,scrollPosition);
+    //console.log("about " ,boxPosition , ", " ,scrollPosition);
 
     if (boxPosition!= undefined &&  boxPosition <= 350.0 && boxPosition >= -550.0) {
       this.isVisible = true;
