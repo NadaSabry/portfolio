@@ -4,10 +4,33 @@
   position: relative;
   transform: translateX(-150px);
   opacity: 0;
+  background-color: var(--same-background-color);
   transition: 3s all ease;
+}
+.section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 10px;
+  align-items: center;
+  @media(max-width:575px){
+    grid-template-columns: none;
+    grid-template-rows: 1fr 2fr;
+    grid-row-gap: 5px;
+    justify-content: center;
+    height: auto;
   }
-  
+  //height: auto;
+}
 #about.reveal {
    transform: translateX(0);
-    opacity: 1; /* Reveal the box when the reveal class is added */
+   opacity: 1; /* Reveal the box when the reveal class is added */
+}
+.about-img img{
+  width:350px;
+  @media(max-width:575px){
+    width:220px;
+  }
+}
+.about-img{
+  margin: auto;
 }
