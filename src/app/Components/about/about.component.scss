@@ -5,7 +5,7 @@
   transform: translateX(-150px);
   opacity: 0;
   background-color: var(--same-background-color);
-  transition: 3s all ease;
+  transition: 2s all ease;
 }
 .section{
   display: grid;
@@ -33,4 +33,15 @@
 }
 .about-img{
   margin: auto;
+}
+.title{
+  opacity: 0;
+  animation: slightRight .7s ease forwards;
+  animation-delay: 2.1s;
+  //animation: floatleft 4s ease 10s infinite forwards;
+}
+.paragraph{
+  opacity: 0;
+  animation: slightTop .7s ease forwards;
+  animation-delay: 3.1s;
 }
