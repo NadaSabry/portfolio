@@ -22,16 +22,43 @@ body{
 
 .shadoww{
   box-shadow: 0 .5rem 1rem rgba(256,256,256,.15);
-  //0px 0px 6px 0px rgba(256, 256, 256, .08),
 }
 .section{
   height: calc(100vh - 2px);
   width: 100%;
   color:var(--text-color);
- // background-color: blueviolet;
   padding: 70px 7%;
-  //display: flex;
-  //align-items: center;
   margin-bottom:2px;
+}
+.slideR{
+  opacity: 0;
+  animation: slightRight .7s ease forwards;
+  animation-delay: 2.1s;
+}
+.slideT{
+  opacity: 0;
+  animation: slightTop .7s ease forwards;
+  animation-delay: 3.1s;
+}
+
+@keyframes slightRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slightTop {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
