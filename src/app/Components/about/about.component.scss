@@ -41,5 +41,9 @@
   color: rgb(255,140,141);
 }
 .parag{
-  font-size: 14px;
+  font-size: 15px;
+  @media(max-width:575px){
+    font-size: 14px;
+  }
+    text-indent: 10px;
 }
