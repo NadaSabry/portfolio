@@ -10,11 +10,16 @@ isVisible = false;
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
+    const myDiv = document.getElementById("about");
+    const height = myDiv?.offsetHeight;
+
+// Log the width and height to the console
+
     const boxPosition = document.querySelector('#about')?.getBoundingClientRect().top;
     const scrollPosition = window.innerHeight + window.pageYOffset;
     //console.log("about " ,boxPosition , ", " ,scrollPosition);
 
-    if (boxPosition!= undefined &&  boxPosition <= 350.0 && boxPosition >= -550.0) {
+    if (boxPosition!= undefined && height!=undefined && boxPosition <= 350.0 && boxPosition >= -height) {
       this.isVisible = true;
     } else {
       this.isVisible = false;
