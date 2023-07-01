@@ -1,0 +1,23 @@
+<!--
+<div class="wrapper">
+    <div class="carsousel">
+        <img src="assets/project/img.jpg" alt="img">
+        <img src="assets/project/img.jpg" alt="img">
+        <img src="assets/project/img.jpg" alt="img">
+        <img src="assets/project/img.jpg" alt="img">
+        <img src="assets/project/img.jpg" alt="img">
+    </div>
+</div>
+-->
+<div class="card">
+    <div class="card-details">
+       <h1>{{Card.title}}</h1> 
+       <p class="description">{{Card.description}}</p>
+       <div class="row">
+         <div *ngIf="Card.githubUrl!=''" class="icon col"><a [href]="Card.githubUrl"><i class="fa fa-github fa-xl"></i></a></div>
+         <div *ngIf="Card.youtubeUrl!=''" class="icon col"><a [href]="Card.youtubeUrl"><i class="fa fa-youtube fa-xl"></i></a></div>
+         <div *ngIf="Card.liveUrl!=''" class="icon col"><a [href]="Card.liveUrl"><i class="fa fa-external-link fa-sm"></i></a></div>
+        </div>
+    </div>
+    <img class="card-img" [src]="Card.imgUrl" alt="img">
+</div>
