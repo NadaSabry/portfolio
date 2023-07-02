@@ -1,16 +1,17 @@
 
 <section id="certificate" class="section" [ngClass]="{ 'reveal': isVisible }">
-<div>Some tags before</div>
-  <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  
-    <ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  
-    <ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  
-    <ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  
-    <ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  
-    <ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  
+  <owl-carousel-o [options]="customOptions">  
+    <ng-container *ngFor="let certf of certificats">
+        <ng-template carouselSlide><app-certificate [certif_list]="certf" ></app-certificate></ng-template>
+    </ng-container>  
+    <!--<ng-template carouselSlide><img src="assets/project/anomaly.png"></ng-template>  -->
   </owl-carousel-o>
-  <div>Some tags after</div>
 </section>
+
+<app-certificate></app-certificate>
+
+
+
   
   <!--
     <div>Some tags before</div>

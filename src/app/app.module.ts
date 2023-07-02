@@ -12,6 +12,7 @@ import { ProjectsComponent } from './Components/projects/projects.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { CardComponent } from './Components/card/card.component';
 import { CertificationsComponent } from './Components/certifications/certifications.component';
+import { CertificateComponent } from './Components/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CertificationsComponent } from './Components/certifications/certificati
     ProjectsComponent,
     ContactComponent,
     CardComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    CertificateComponent
     //SwiperModule
   ],
   imports: [

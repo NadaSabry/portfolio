@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Certif } from 'src/app/Models/certif';
 
 @Component({
   selector: 'app-certifications',
@@ -7,6 +8,15 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./certifications.component.scss']
 })
 export class CertificationsComponent {
+  certificats:Certif[]=[
+    {imgurl:"assets/certificate/facebook.jpg",link:"",title:"facebook Hacker cup"},
+    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"},
+    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"},
+    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"}
+  ]
+  
+  
+  
   isVisible = false;
 
   @HostListener('window:scroll', ['$event'])
@@ -34,7 +44,7 @@ export class CertificationsComponent {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['1', '2'],
+    navText: ['prev', 'next'],
     responsive: {
       0: {
         items: 1
