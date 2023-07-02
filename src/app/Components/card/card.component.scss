@@ -51,9 +51,9 @@ img{
 }
 */
 .card{
-    width:calc(100% / 2 );
+    width:calc(100%);
+    height: 95%;
     overflow: hidden;
-    //background-color: aqua;
 }
 .card-details{
    // background-color: rgba(0,0,0,0.8);
@@ -100,4 +100,5 @@ a:hover{
 }
 .description{
     line-height: normal;
+    font-size: 14px;
 }

@@ -1,7 +1,8 @@
 <section id="projects" class="section" [ngClass]="{ 'reveal': isVisible }">
-    <h2>Projects Us</h2>
-    <p>Some information about our company...</p>
+  <h1 class="title">My Projects</h1>
+  <div class="projects-container">
     <ng-container *ngFor="let card of Card">
-        <app-card [Card]="card"></app-card>
-      </ng-container>
+      <app-card  [Card]="card"></app-card>
+    </ng-container>
+  </div>
 </section>
