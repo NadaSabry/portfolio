@@ -7,6 +7,10 @@
   background-color: var(--same-background-color);
   transition: 2s all ease;
 }
+#about.reveal {
+  transform: translateX(0);
+  opacity: 1; /* Reveal the box when the reveal class is added */
+}
 .section{
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -20,10 +24,6 @@
     height: auto;
   }
   //height: auto;
-}
-#about.reveal {
-   transform: translateX(0);
-   opacity: 1; /* Reveal the box when the reveal class is added */
 }
 .about-img img{
   width:350px;
