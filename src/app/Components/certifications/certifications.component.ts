@@ -5,10 +5,11 @@ import { Certif } from 'src/app/Models/certif';
 @Component({
   selector: 'app-certifications',
   templateUrl: './certifications.component.html',
-  styleUrls: ['./certifications.component.scss']
+  styleUrls: ['./certifications.component.scss'],
 })
 export class CertificationsComponent {
   certificats:Certif[]=[
+    {imgurl:"assets/certificate/sparks.jpg",link:"#",title:"Internship in web developement"},
     {imgurl:"assets/certificate/facebook.jpg",link:"",title:"facebook Hacker cup"},
     {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"},
     {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"},
@@ -44,12 +45,12 @@ export class CertificationsComponent {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['prev', 'next'],
+    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     responsive: {
       0: {
         items: 1
       },
-      400: {
+      500: {
         items: 2
       },
       740: {
