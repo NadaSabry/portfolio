@@ -9,11 +9,12 @@ import { Certif } from 'src/app/Models/certif';
 })
 export class CertificationsComponent {
   certificats:Certif[]=[
-    {imgurl:"assets/certificate/sparks.jpg",link:"#",title:"Internship in web developement"},
+    {imgurl:"assets/certificate/Sparks_Complete.png",link:"#",title:"Internship in web developement"},
     {imgurl:"assets/certificate/facebook.jpg",link:"",title:"facebook Hacker cup"},
-    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"},
-    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"},
-    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022"}
+    {imgurl:"assets/certificate/girls.jpg",link:"",title:"Girls ACPC 2022 with Rank 52"},
+    {imgurl:"assets/certificate/local.jpg",link:"",title:"ACPC 2020"},
+    {imgurl:"assets/certificate/devfest_Hackathon.jpg",link:"#",title:"devfest"},
+    {imgurl:"assets/certificate/DB.jpg",link:"",title:"Course Database"},
   ]
   
   
@@ -22,12 +23,12 @@ export class CertificationsComponent {
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    const myDiv = document.getElementById("certificate");
+    const myDiv = document.getElementById("certification");
     const height = myDiv?.offsetHeight;
 
 // Log the width and height to the console
 
-    const boxPosition = document.querySelector('#certificate')?.getBoundingClientRect().top;
+    const boxPosition = document.querySelector('#certification')?.getBoundingClientRect().top;
     const scrollPosition = window.innerHeight + window.pageYOffset;
     //console.log("about " ,boxPosition , ", " ,scrollPosition);
 
