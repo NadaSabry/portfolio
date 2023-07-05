@@ -1,4 +1,28 @@
+/*
 .fixed-bottom {
     left: 0;
     width: 100%;
+}
+*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  align-items: center;
+  padding: 1rem 9%;
+  background-color: #323946;
+}
+.footer-iconTop a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    background-color: var(--sec-color);
+    border-radius: .5rem;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--sec-color);
+}
+.footer-iconTop a i{
+    color:white//#323946;
 }
