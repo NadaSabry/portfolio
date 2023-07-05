@@ -3,8 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   // background-color: brown;
+    //background-color://linear-gradient(rgba(0,0,0,0.5), var(--sec-color));
     padding: 0px 5%;
+    background-color:rgba(6, 3, 7,0.9); //rgba(0, 0, 0, 0.1);
 }
 .routing{
     display: flex;
@@ -22,9 +23,6 @@
 }
 .nav-link{
    color:var(--text-color);
-}
-.navbar{
-    background-color:rgba(6, 3, 7,0.9); //rgba(0, 0, 0, 0.1);
 }
 .active{
     color:var(--sec-color)
