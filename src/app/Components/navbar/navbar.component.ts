@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,42 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit{
   activenow: string = "rgb(30,154,161)";
-  active: string[] = [this.activenow, '', '', '',''];
+  active: string[] = [this.activenow, '', '', '', ''];
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const homeSection = document.querySelector('#home');
+    const aboutSection = document.querySelector('#about');
+    const projectsSection = document.querySelector('#projects');
+    const certificationSection = document.querySelector('#certification');
+    const contactSection = document.querySelector('#contact');
+    
+    const homeLink = document.querySelector('.navbar-nav .nav-link:nth-child(2)');
+    console.log(homeSection," , " ,homeLink )
+    
+    if (this.isElementInViewport(homeSection)) {
+      this.active = [this.activenow, '', '', '', ''];
+    }else if (this.isElementInViewport(aboutSection)){
+      this.active = ['', this.activenow , '', '', ''];
+    }else if (this.isElementInViewport(projectsSection)){
+      this.active = ['', '' ,this.activenow , '', ''];
+    }else if (this.isElementInViewport(certificationSection)){
+      this.active = ['', '' , '', this.activenow, ''];
+    }else if (this.isElementInViewport(contactSection)){
+      this.active = ['', '' , '', '', this.activenow];
+    }else{
+      this.active = ['', '' , '', '', ''];
+    }
+    
+  }
+  isElementInViewport(el:any) {
+    const rect = el.getBoundingClientRect();
+   // console.log(rect.top," ,, " ,rect.bottom);
+    return (
+      rect.top <= 0 &&
+      rect.bottom > 0
+    );
+  }
 
   constructor(private router: Router) {}
   ngOnInit(): void {

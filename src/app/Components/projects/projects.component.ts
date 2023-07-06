@@ -10,34 +10,34 @@ export class ProjectsComponent {
   isVisible = false;
   Card:CardData[]=[
   {
-    description:"by angular framework and html,css",githubUrl:"https://github.com/NadaSabry/portfolio",
+    description:"using angular and bootstrap framework",githubUrl:"https://github.com/NadaSabry/portfolio",
     imgUrl:"assets/project/_portfolio.jpg",liveUrl:"https://portfolio-three-black-45.vercel.app",
     title:"Portfolio",youtubeUrl:""
   },
   {
-    description:"Angular Framework with Rest api",githubUrl:"https://github.com/NadaSabry/ZoneGuardFE",
+    description:"using Angular framework with Rest api",githubUrl:"https://github.com/NadaSabry/ZoneGuardFE",
     imgUrl:"assets/project/GP.jpg",liveUrl:"https://zone-guard-fe-wexa.vercel.app/",
     title:"Security Compound",youtubeUrl:"https://youtu.be/WwK49AY5Gmo"
   },
   {
-    description:"by Angular framework ,html ,css, bootstrap framework",githubUrl:"https://github.com/NadaSabry/loopstudiosLanding",
+    description:"using Angular and bootstrap framework",githubUrl:"https://github.com/NadaSabry/loopstudiosLanding",
     imgUrl:"assets/project/loopstudios.jpg",liveUrl:"https://loopstudios-landing-tau.vercel.app/",
     title:"loopstudios",youtubeUrl:"https://youtu.be/UNFmNzE-K28"
   },
   {
-    description:"",githubUrl:"https://github.com/NadaSabry/REST-Countries-API",
+    description:"using Angular framework with Rest api",githubUrl:"https://github.com/NadaSabry/REST-Countries-API",
     imgUrl:"assets/project/rest-api.jpg",liveUrl:"https://nadasabry.github.io/REST-Countries-API/",
-    title:"Rest-counteries-api",youtubeUrl:""
+    title:"Rest-counteries-api",youtubeUrl:"https://youtu.be/PkQy_GngQ_8"
   },
   {
-    description:"",githubUrl:"https://github.com/NadaSabry/REST-Countries-API",
-    imgUrl:"assets/project/php.jpg",liveUrl:"https://nadasabry.github.io/REST-Countries-API/",
-    title:"Rest-counteries-api",youtubeUrl:""
+    description:"using HTML, CSS and bootstrap framework",githubUrl:"https://github.com/NadaSabry/Food",
+    imgUrl:"assets/project/php.jpg",liveUrl:"",
+    title:"Food Website",youtubeUrl:"https://youtu.be/vEhMOEQ3oQ4"
   },
   {
-    description:"",githubUrl:"https://github.com/NadaSabry/REST-Countries-API",
-    imgUrl:"assets/project/Rosa_Bellaa.jpg",liveUrl:"https://nadasabry.github.io/REST-Countries-API/",
-    title:"Rest-counteries-api",youtubeUrl:""
+    description:"using HTML, CSS and bootstrap framework with .Net core for backend",githubUrl:"https://github.com/NadaSabry/Rosa_Bella",
+    imgUrl:"assets/project/Rosa_Bellaa.jpg",liveUrl:"",
+    title:"E-commerce",youtubeUrl:"https://youtu.be/UnwtZ_WfJpY"
   }
 ];
 
