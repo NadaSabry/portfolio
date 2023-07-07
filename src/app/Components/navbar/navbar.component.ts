@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent {
+
   activenow: string = "rgb(30,154,161)";
   active: string[] = [this.activenow, '', '', '', ''];
 
@@ -18,8 +19,7 @@ export class NavbarComponent implements OnInit{
     const certificationSection = document.querySelector('#certification');
     const contactSection = document.querySelector('#contact');
     
-    const homeLink = document.querySelector('.navbar-nav .nav-link:nth-child(2)');
-    console.log(homeSection," , " ,homeLink )
+    //console.log(homeSection," , ")
     
     if (this.isElementInViewport(homeSection)) {
       this.active = [this.activenow, '', '', '', ''];
@@ -38,17 +38,13 @@ export class NavbarComponent implements OnInit{
   }
   isElementInViewport(el:any) {
     const rect = el.getBoundingClientRect();
-   // console.log(rect.top," ,, " ,rect.bottom);
+    //console.log(el);
     return (
-      rect.top <= 0 &&
+      rect.top <= 10 &&
       rect.bottom > 0
     );
   }
 
-  constructor(private router: Router) {}
-  ngOnInit(): void {
-    this.router.navigate(['']);
-  }
   
   standup(index: number) {
     for (let i = 0; i < this.active.length; i++) {
