@@ -40,7 +40,7 @@ export class NavbarComponent {
     const rect = el.getBoundingClientRect();
     //console.log(el);
     return (
-      rect.top <= 10 &&
+      rect.top <= 100 &&
       rect.bottom > 0
     );
   }
