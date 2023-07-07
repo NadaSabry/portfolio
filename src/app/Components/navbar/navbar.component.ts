@@ -6,8 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
-
+export class NavbarComponent implements OnInit{
   activenow: string = "rgb(30,154,161)";
   active: string[] = [this.activenow, '', '', '', ''];
 
@@ -19,17 +18,18 @@ export class NavbarComponent {
     const certificationSection = document.querySelector('#certification');
     const contactSection = document.querySelector('#contact');
     
-    //console.log(homeSection," , ")
+    const homeLink = document.querySelector('.navbar-nav .nav-link:nth-child(2)');
+    //console.log(homeSection," , " ,homeLink )
     
-    if (homeSection!.getBoundingClientRect().top <=0 && homeSection!.getBoundingClientRect().bottom > 0) {
+    if (this.isElementInViewport(homeSection)) {
       this.active = [this.activenow, '', '', '', ''];
-    }else if (aboutSection!.getBoundingClientRect().top <=0 && aboutSection!.getBoundingClientRect().bottom > 0){
+    }else if (this.isElementInViewport(aboutSection)){
       this.active = ['', this.activenow , '', '', ''];
-    }else if (projectsSection!.getBoundingClientRect().top <=0 && projectsSection!.getBoundingClientRect().bottom > 0){
+    }else if (this.isElementInViewport(projectsSection)){
       this.active = ['', '' ,this.activenow , '', ''];
-    }else if (certificationSection!.getBoundingClientRect().top <=0 && certificationSection!.getBoundingClientRect().bottom > 0){
+    }else if (this.isElementInViewport(certificationSection)){
       this.active = ['', '' , '', this.activenow, ''];
-    }else if (contactSection!.getBoundingClientRect().top <=0 && contactSection!.getBoundingClientRect().bottom > 0){
+    }else if (this.isElementInViewport(contactSection)){
       this.active = ['', '' , '', '', this.activenow];
     }else{
       this.active = ['', '' , '', '', ''];
@@ -38,13 +38,23 @@ export class NavbarComponent {
   }
   isElementInViewport(el:any) {
     const rect = el.getBoundingClientRect();
-    console.log(rect.top);
+    //console.log(el , "height= ",rect.height);
+    //console.log(rect.top," ,, " ,rect.bottom);
+    /*
+    if(rect.top <= 1.0){
+       console.log('true');
+    }
+    */
     return (
-      rect.top <= 100 &&
-      rect.bottom > 0
+      rect.top <= 1.0 &&
+      rect.bottom > 1
     );
   }
 
+  constructor(private router: Router) {}
+  ngOnInit(): void {
+    this.router.navigate(['']);
+  }
   
   standup(index: number) {
     for (let i = 0; i < this.active.length; i++) {
