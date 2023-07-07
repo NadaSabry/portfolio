@@ -21,15 +21,15 @@ export class NavbarComponent {
     
     //console.log(homeSection," , ")
     
-    if (this.isElementInViewport(homeSection)) {
+    if (homeSection!.getBoundingClientRect().top <=0 && homeSection!.getBoundingClientRect().bottom > 0) {
       this.active = [this.activenow, '', '', '', ''];
-    }else if (this.isElementInViewport(aboutSection)){
+    }else if (aboutSection!.getBoundingClientRect().top <=0 && aboutSection!.getBoundingClientRect().bottom > 0){
       this.active = ['', this.activenow , '', '', ''];
-    }else if (this.isElementInViewport(projectsSection)){
+    }else if (projectsSection!.getBoundingClientRect().top <=0 && projectsSection!.getBoundingClientRect().bottom > 0){
       this.active = ['', '' ,this.activenow , '', ''];
-    }else if (this.isElementInViewport(certificationSection)){
+    }else if (certificationSection!.getBoundingClientRect().top <=0 && certificationSection!.getBoundingClientRect().bottom > 0){
       this.active = ['', '' , '', this.activenow, ''];
-    }else if (this.isElementInViewport(contactSection)){
+    }else if (contactSection!.getBoundingClientRect().top <=0 && contactSection!.getBoundingClientRect().bottom > 0){
       this.active = ['', '' , '', '', this.activenow];
     }else{
       this.active = ['', '' , '', '', ''];
@@ -38,7 +38,7 @@ export class NavbarComponent {
   }
   isElementInViewport(el:any) {
     const rect = el.getBoundingClientRect();
-    //console.log(el);
+    console.log(rect.top);
     return (
       rect.top <= 100 &&
       rect.bottom > 0
