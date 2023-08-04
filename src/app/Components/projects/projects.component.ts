@@ -38,7 +38,13 @@ export class ProjectsComponent {
     description:"using HTML, CSS and bootstrap framework with .Net core for backend",githubUrl:"https://github.com/NadaSabry/Rosa_Bella",
     imgUrl:"assets/project/Rosa_Bellaa.jpg",liveUrl:"",
     title:"E-commerce",youtubeUrl:"https://youtu.be/UnwtZ_WfJpY"
+  },
+  {
+    description:"using HTML, CSS and bootstrap framework with Angular framework",githubUrl:"https://github.com/NadaSabry/sunnyside",
+    imgUrl:"assets/project/sunnyside.jpg",liveUrl:"https://sunnyside-rho-six.vercel.app/",
+    title:"sunnyside",youtubeUrl:""
   }
+  // add image with size 977x656
 ];
 
   @HostListener('window:scroll', ['$event'])
