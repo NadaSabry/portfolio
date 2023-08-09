@@ -43,7 +43,13 @@ export class ProjectsComponent {
     description:"using HTML, CSS and bootstrap framework with Angular framework",githubUrl:"https://github.com/NadaSabry/sunnyside",
     imgUrl:"assets/project/sunnyside.jpg",liveUrl:"https://sunnyside-rho-six.vercel.app/",
     title:"sunnyside",youtubeUrl:""
+  },
+  {
+    description:"using HTML, CSS, TypeScript and Angular framework",githubUrl:"https://github.com/NadaSabry/Calculator",
+    imgUrl:"assets/project/3_Calculator.jpg",liveUrl:"https://calculator-six-theta-35.vercel.app",
+    title:"Calculator",youtubeUrl:""
   }
+
   // add image with size 977x656
 ];
 
