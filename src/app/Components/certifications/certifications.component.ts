@@ -8,7 +8,11 @@ import { Certif } from 'src/app/Models/certif';
   styleUrls: ['./certifications.component.scss'],
 })
 export class CertificationsComponent {
+
+  // Cut the image : 1056 x 816 pixel
+  // can use this website to cut the photo https://www.iloveimg.com/resize-image#resize-options,pixels
   certificats:Certif[]=[
+    {imgurl:"assets/certificate/\ITI Certification3.jpg",link:"https://drive.google.com/file/d/1hFMsvDnjp_4O4BihiOjiBPYoj_G0qPJh/view",title:"ITI FrontEnd Angular"},
     {imgurl:"assets/certificate/Sparks_Complete.png",link:"https://drive.google.com/file/d/1ItPcc2CNAa6zmbWVvPvvSmrah5dkhaSJ/view?usp=drive_link",title:"Internship in web developement"},
     {imgurl:"assets/certificate/facebook.jpg",link:"https://drive.google.com/file/d/1kk9VVrZ-nTU4usAYimLyz46Cr6fcoiVK/view?usp=drive_link",title:"facebook Hacker cup"},
     {imgurl:"assets/certificate/girls.jpg",link:"https://drive.google.com/file/d/1PLnc-qUTHA-ew1GmuvQ73CHwTqhBOpF9/view?usp=drive_link",title:"Girls ACPC 2022 with Rank 52"},
