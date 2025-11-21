@@ -35,7 +35,8 @@
     align-items: center;
     align-content:center;
     grid-template-areas: 
-   "icon text text text text text img img img img img img";
+//    "icon text text text text text img img img img img img";
+"icon text text text text text text text img img img img";
     @media (max-width:575px) {
 
         grid-template-areas:
