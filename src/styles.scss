@@ -6,7 +6,7 @@
 }
 :root{
   --text-color:white;
-  --sec-color:rgb(30,154,161);//rgb(32, 188, 177);
+  --sec-color:#00ADB5;//rgb(30,154,161);//rgb(32, 188, 177);
   --same-background-color:rgb(6,4,6);
   //hsl(176,71%,43%)
 }
@@ -62,9 +62,13 @@ body{
   }
 }
 .title{
-  text-shadow: 1px 1px white;
+  text-shadow: 0.5px 0.5px white;
+  font-weight: bold;
   font-family: "Sansita Swashed", cursive;
   color: white;
   //padding-top: 5px;
+}
+.text-part{
+  color: var(--sec-color);
 }
 

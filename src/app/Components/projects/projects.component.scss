@@ -38,3 +38,27 @@
   width:100%;
   height: 300px;
 }
+
+
+
+//   ----------------------------------------------------------------------------------
+#projectsv2 {
+//position: relative;
+transform: translateX(-150px);
+opacity: 0;
+//background-color: var(--same-background-color);
+transition: 2s all ease;
+}
+
+#projectsv2.reveal {
+  transform: translateX(0);
+  opacity: 1; /* Reveal the box when the reveal class is added */
+}
+
+.Carousel{
+    margin-top: 15vh;
+    //background-color: burlywood;
+}
+h1{
+  padding-bottom: 20px;
+}

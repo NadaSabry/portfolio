@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit{
   onScroll() {
     const homeSection = document.querySelector('#home');
     const aboutSection = document.querySelector('#about');
-    const projectsSection = document.querySelector('#projects');
+    const projectsSection = document.querySelector('#projectsv2');
     const certificationSection = document.querySelector('#certification');
     const contactSection = document.querySelector('#contact');
     

@@ -14,36 +14,42 @@
 .section{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 25px;
   align-items: center;
-  @media(max-width:775px){
+  //@media(max-width:775px){
+  //@media (orientation: landscape) { // for labtop devices in landscape mode width > height
+  @media (orientation: portrait) { // for mobile devices in portrait mode height > width
     grid-template-columns: none;
-    grid-template-rows: 1fr 2fr;
-    grid-row-gap: 5px;
+    //grid-template-rows: 1fr 1fr;
+    grid-row-gap: 25px;
     justify-content: center;
     height: auto;
   }
   //height: auto;
 }
 .about-img img{
-  width:350px;
+  width:300px;
   @media(max-width:575px){
-    width:220px;
+    width:200px;
   }
 }
 .about-img{
   margin: auto;
 }
 .title{
-  text-shadow: 1px 1px white;
+  //text-shadow: 1px 1px white;
   font-family: "Sansita Swashed", cursive;
   font-size: 45px;
-  color: rgb(255,140,141);
+  color: white; //rgb(255,140,141);
 }
 .parag{
   font-size: 15px;
   @media(max-width:575px){
     font-size: 14px;
   }
-    text-indent: 10px;
+  line-height: 1.7;     /* علشان يريح العين */
+ // white-space: pre-line; /* يخلي البراجراف يظهر بسطر جديد من غير <br> */
+  text-indent: 10px;
 }
+
+

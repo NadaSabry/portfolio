@@ -3,9 +3,10 @@
        <h3>{{Card.title}}</h3> 
        <p class="description">{{Card.description}}</p>
        <div class="row">
-         <div *ngIf="Card.githubUrl!=''" class="icon col"><a [href]="Card.githubUrl" target="_blank"><i class="fa fa-github fa-xl"></i></a></div>
-         <div *ngIf="Card.youtubeUrl!=''" class="icon col"><a [href]="Card.youtubeUrl" target="_blank"><i class="fa fa-youtube fa-xl"></i></a></div>
-         <div *ngIf="Card.liveUrl!=''" class="icon col"><a [href]="Card.liveUrl" target="_blank"><i class="fa fa-external-link fa-sm"></i></a></div>
+         <div *ngIf="Card.githubUrl" class="icon col"><a [href]="Card.githubUrl" target="_blank"><i class="fa fa-github fa-xl"></i></a></div>
+         <div *ngIf="Card.youtubeUrl" class="icon col"><a [href]="Card.youtubeUrl" target="_blank"><i class="fa fa-youtube fa-xl"></i></a></div>
+         <div *ngIf="Card.liveUrl" class="icon col"><a [href]="Card.liveUrl" target="_blank"><i class="fa fa-external-link fa-sm"></i></a></div>
+         <div *ngIf="Card.linkedinUrl" class="icon col"><a [href]="Card.linkedinUrl" target="_blank"><i class="fa fa-linkedin"></i></a></div>
         </div>
     </div>
     <img class="card-img" [src]="Card.imgUrl" alt="img">

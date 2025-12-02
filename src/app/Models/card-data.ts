@@ -4,5 +4,6 @@ export interface CardData {
     youtubeUrl?:string;
     liveUrl?:string;
     description?:string;
+    linkedinUrl?:string;
     title?:string;
 }

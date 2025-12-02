@@ -1,8 +1,21 @@
-<section id="projects" class="section" [ngClass]="{ 'reveal': isVisible }">
-  <h1 class="title">My Projects</h1>
+<!-- <section id="projects" class="section" [ngClass]="{ 'reveal': isVisible }">
+  <h1 class="title">My Recently <span class="text-part">Projects</span></h1>
   <div class="projects-container">
     <ng-container *ngFor="let card of Card">
       <app-card  [Card]="card"></app-card>
     </ng-container>
   </div>
+</section> -->
+
+<section id="projectsv2" class="section" [ngClass]="{ 'reveal': isVisible }">
+  <div class="Carousel">
+    <h1 class="title">My Recent <span class="text-part">Projects</span></h1>
+  <owl-carousel-o [options]="customOptions">  
+    <ng-container *ngFor="let card of Card">
+        <ng-template carouselSlide><div style="padding: 8px;">
+          <app-card [Card]="card"></app-card></div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
 </section>
